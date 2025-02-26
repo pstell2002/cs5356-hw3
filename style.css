@@ -1,5 +1,5 @@
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 2;
     padding: 0;
     display: flex;
@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: bisque;
   }
 
   .container {
@@ -33,6 +34,33 @@
     background-color: darkorange;
   }
 
+  .nasa-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f3f3;
+    transition: background-color 2s 500ms;
+}
+
+.nasa-container:hover {
+  background-color: rgb(0, 166, 255);
+}
+
+
+.nasa-content {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+/* Text Styling */
+#nasa-explanation {
+    flex: 1; /* Take remaining space */
+    text-align: left;
+    max-width: 400px;
+}
 
   .grid{
     display: grid;
@@ -46,13 +74,14 @@
 
   img {
     width: 100%;
-    max-width: 300px;  /* Adjust as needed */
+    max-width: 300px;  
     height: auto;
+    justify-content: center;
   } 
 
   video {
     width: 100%;
-    max-width: 300px;  /* Adjust as needed */
+    max-width: 300px; 
     height: auto;
   }
 
