@@ -8,7 +8,6 @@
     justify-content: center;
     text-align: center;
   }
-  
   .container {
     display: flex;
     flex-direction: column;
@@ -19,8 +18,12 @@
 
   .grid{
     display: grid;
-    grid-template-columns: repeat(3, 12px);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(auto, auto);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
   }
 
   img {
@@ -29,3 +32,8 @@
     height: auto;
   } 
 
+  video {
+    width: 100%;
+    max-width: 300px;  /* Adjust as needed */
+    height: auto;
+  }
